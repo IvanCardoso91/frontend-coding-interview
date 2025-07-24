@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+    --color-blue-brand: #0075EB;
+    --color-white: #ffffff;
+    --color-input-border: #9CA3AF;
+    --color-label: #111827;
+    --font-heading-size: 20px;
+    --font-heading-weight: 700;
+    --radius-default: 8px;
+    --font-helvetica: "Helvetica", sans-serif;
+}
+
+.input-design {
+    @apply w-full px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[color:var(--color-blue-brand)];
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-default);
+}
+
+.button-design {
+    @apply w-full py-2 text-sm font-medium transition;
+    background-color: var(--color-blue-brand);
+    color: var(--color-white);
+    border-radius: var(--radius-default);
+}
+
+.button-link {
+    @apply text-sm hover:underline;
+    background: transparent;
+    color: var(--color-blue-brand);
+}
+
+.heading-auth {
+    font-family: var(--font-helvetica);
+    font-size: var(--font-heading-size);
+    font-weight: var(--font-heading-weight);
+    line-height: 100%;
+    color: var(--color-label);
+    text-align: center;
+}
